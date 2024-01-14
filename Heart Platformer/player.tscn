@@ -90,8 +90,12 @@ script = ExtResource("1_l0vle")
 position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_jgnbx")
 animation = &"idle"
-frame_progress = 0.863459
+frame_progress = 0.549256
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -7.5)
 shape = SubResource("RectangleShape2D_qjpof")
+
+[node name="CoyoteJumpTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
